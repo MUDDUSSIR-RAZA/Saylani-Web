@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saylani Clone</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <!-- DIALOGE FLOW INTEGRAION -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger intent="WELCOME" chat-title="SMIT-ADMISSIONS" agent-id="a756ec87-33ff-4999-8e11-940da69c8c31"
+    language-code="en"></df-messenger>
+
+  <!-- KOMMUNICATE INTEGRATION -->
+  <!-- <script type="text/javascript">
+    (function (d, m) {
+      var kommunicateSettings =
+        { "appId": "3329b2e82da7624bf0c821dbb242aebfa", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  </script> -->
+
+
+  <div class="gray">
+    <div class="small-nav">
+      <p class="small-p"><span class="smallnav-icon"><img src="css/icons/envelope.png"></span>info@SaylaniWelfareUSA.com
+      </p>
+      <p class="small-p"><span class="smallnav-icon"><img src="css/icons/phone-flip.png"></span>833-786-0999</p>
+      <div class="english">English</div>
+    </div>
+  </div>
+  <header>
+    <div class="width-100">
+      <div class="navbar">
+        <a href="#">
+          <img src="css/images/logo.png" alt="logo" />
+        </a>
+        <div class="nav-text">
+          <li class="active">Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Media</li>
+          <li>News</li>
+          <li>Contact Us</li>
+          <li>Bank Details</li>
+          <div class="nav-buttons">
+            <button class="nav-btn blue">DONATE NOW</button>
+            <button class="nav-btn green">BE A SPONSAR</button>
+          </div>
+        </div>
+      </div>
+      <div class="ham-burger" onclick="navBar()">
+        <button class="ham-bnt"><img src="css/icons/menu-burger.png"></button>
+      </div>
+    </div>
+  </header>
+  <div class="main-container">
+    <div class="container-one">
+      <div class="text">
+        <h1>
+          Welcome to the<br /><span class="green-txt">Saylani</span> Welfare
+        </h1>
+        <h2>The Largest NGO offering free <span class="auto-type"></span></h2>
+        <p class="mar-top-15">
+          Saylani Welfare is on the ground and already working with local
+          communities
+          to assess how best to support underprivileged families in more than
+          63 areas
+          of day to day lives.
+        </p>
+        <button class="Explore-btn mar-top-15">
+          Explore More
+          <span class="arrow"><img src="css/icons/arrow-right.png" /></span>
+        </button>
+      </div>
+      <div class="text-img">
+        <img src="css/images/main.png" />
+      </div>
+    </div>
+
+    <div class="container-two">
+      <div class="setall">
+        <div class="input">
+          <h4>General</h4>
+          <input type="number" value="0" />
+          <div class="dollar">$</div>
+        </div>
+      </div>
+      <div class="setall-btns">
+        <button class="container-two-btn">
+          Blood Bank / Thalassemia Treatment
+        </button>
+        <button class="container-two-btn">Family Kifalat</button>
+        <button class="container-two-btn">Medical</button>
+        <button class="container-two-btn">Food</button>
+
+        <button class="container-three-btn green ml-6" style="color: #fff">
+          Quick Donate
+        </button>
+      </div>
+    </div>
+
+    <div class="container-three mar-top-15">
+      <img src="css/images/qurbani.jpg" />
+      <div class="book-now">
+        <button class="container-three-btn green">Book Now</button>
+      </div>
+      <div class="center-big-text mar-top-15">What We Are Doing</div>
+
+      <div class="services mar-top-15">
+        <div class="service-box">
+          <img src="css/images/welfare.png" />
+          <p class="services-txt">Welfare</p>
+        </div>
+        <div class="service-box">
+          <img src="css/images/medical.png" />
+          <p class="services-txt">Medical</p>
+        </div>
+        <div class="service-box">
+          <img src="css/images/sadqah.png" />
+          <p class="services-txt">Online Sadqah</p>
+        </div>
+        <div class="service-box">
+          <img src="css/images/ro.png" />
+          <p class="services-txt">RO Plant</p>
+        </div>
+        <div class="service-box">
+          <img src="css/images/education.png" />
+          <p class="services-txt">Education</p>
+        </div>
+        <div class="service-box">
+          <img src="css/images/food.png" />
+          <p class="services-txt">Food</p>
+        </div>
+      </div>
+
+      <div class="cards mar-top-45">
+        <div class="card">
+          <img src="css/images/ffcdeed8-6cc9-47c2-80dd-9630145c0ace.jpg">
+          <div class="absolute">
+            <h5>R O Water Filter Plant</h5>
+            <button class="card-btn">Donate</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="css/images/mass-it.jpg">
+          <div class="absolute">
+            <h5>IT Entrepreneurship Courses</h5>
+            <button class="card-btn">Donate</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="css/images/family-support.jpg">
+          <div class="absolute">
+            <h5>Zakat</h5>
+            <button class="card-btn">Donate</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex block mar-top-45">
+        <div class="project-img">
+          <img src="css/images/otherproject.jpg">
+          <div class="borderleft-text">
+            <p>Saylani serve almost 300,000 underprivileged on daily</br> basis</p>
+            <hr>
+          </div>
+        </div>
+        <div class="project-text">
+
+          <h3>Other projects</h3>
+          <div class="project-box">
+            <div class="side-icons flex">
+              <div class="image-gray">
+                <img src="css/images/hepatisis.png">
+              </div>
+              <div class="blue-text">Hepatahis
+                <p class="sub-text">Saylani Welfare has also set up a clinic for the best treatment of hepatitis
+                  patients where hepatitis patients are being treated
+                </p>
+              </div>
+            </div>
+
+            <div class="side-icons flex">
+              <div class="image-gray">
+                <img src="css/images/society.png">
+              </div>
+              <div class="blue-text">Housing Society
+                <p class="sub-text">Saylani Welfare is also providing its own home facility for the homeless people. So
+                  far, thousands of houses and flats have been constructed and given in easy installments
+                </p>
+              </div>
+            </div>
+
+            <div class="side-icons flex">
+              <div class="image-gray">
+                <img src="css/images/it literacy.png">
+              </div>
+              <div class="blue-text">IT Literacy
+                <p class="sub-text">We are committed to developing more than 1 million software developers, which will
+                  add about 100 billion annually to Pakistan's economy and help ease the debt burden on Pakistan
+                </p>
+              </div>
+            </div>
+
+            <div class="side-icons flex">
+              <div class="image-gray">
+                <img src="css/images/tharapakar.png">
+              </div>
+              <div class="blue-text">Tharparkar
+                <p class="sub-text">In Tharparkar, Saylani has set up several schools and ro plants, dug wells and
+                  brought the children there to Karachi and taught them modern technology
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="count-box mar-top-15">
+        <div class="count-row">
+          <div class="count-minibox">
+            <div class="round-backgound">
+              <img src="css/icons/food.png">
+            </div>
+            <div class="count-text" data-val="300000">
+              000
+            </div>
+            <div class="count-subtext">
+              &nbsp;Food</br>
+              <p class="text-align-center">(Daily)</p>
+            </div>
+          </div>
+
+          <div class="count-minibox">
+            <div class="round-backgound">
+              <img src="css/icons/welfare.png">
+            </div>
+            <div class="count-text" data-val="20000">
+              000
+            </div>
+            <div class="count-subtext">
+              &nbsp;Family Adoption</br>
+              <p class="text-align-center">(Monthly)</p>
+            </div>
+          </div>
+
+          <div class="count-minibox">
+            <div class="round-backgound">
+              <img src="css/icons/education.png">
+            </div>
+            <div class="count-text" data-val="25000">
+              000
+            </div>
+            <div class="count-subtext">
+              &nbsp;Education</br>
+              <p class="text-align-center">(Monthly)</p>
+            </div>
+          </div>
+
+          <div class="count-minibox">
+            <div class="round-backgound">
+              <img src="css/icons/temp.png">
+            </div>
+            <div class="count-text" data-val="125000">
+              000
+            </div>
+            <div class="count-subtext">
+              &nbsp;Medical</br>
+              <p class="text-align-center">(Monthly)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="cont-lasttext mar-top-45">
+        <p>Our Terminals</p>
+      </div>
+    </div>
+
+    <div class="container-four">
+
+
+      <div class="center-big-text mar-top-15">What They Say?</div>
+      <div class="slider-container">
+
+
+
+
+        <div class="big-card">
+          <div class="slider mar-top-15">
+            <img src="css/images/card-one.jpg">
+            <div class="blue-text-slider text-align-center">Asif Ismail</div>
+            <div class="text-align-center">(C.O.O. & Director, Premier Cables Pvt. Ltd)</div>
+          </div>
+          <div class="slider-desc">
+            When we talk about serving humanity, no second thought occurs other than Saylani Welfare Trust. Saylani is
+            doing a tremendous job in terms of everything they do for a troubled humanity. From offering food to the
+            hungry to arranging jobs for jobless people, arranging marriages and dowry for orphaned girls, offering free
+            medical facilities, and much more. We sincerely wish them success in their future endeavors and in raising
+            their standards of serving mankind in a better and more professional way.
+          </div>
+          <div class="slide-butttons">
+            <button class="btn-one" onclick="nextBtn()">
+              < </button>
+                <button class="btn-two" onclick="prevBtn()">
+                  > </button>
+          </div>
+        </div>
+
+        <div class="big-card">
+          <div class="slider mar-top-15">
+            <img src="css/images/card-two.jpg">
+            <div class="blue-text-slider text-align-center">Arshad Wali Muhammad</div>
+            <div class="text-align-center">(C.O.O. & Director, Premier Cables Pvt. Ltd)</div>
+          </div>
+          <div class="slider-desc">
+            (Group Director, Gerry’s Group)
+            Saylani Welfare Trust is a name that needs no introduction today. The journey this team embarked upon was
+            made possible owing to their zeal, enthusiasm & commitment to the society and by the grace of Allah (SWT),
+            it has become a name that we need and not just the one we want. I wish Saylani’s team all the success and
+            blessing that they deserve for future, May God bless Saylani and ensure prosperity and happiness for our
+            people, Ameen!
+          </div>
+          <div class="slide-butttons">
+            <button class="btn-one" onclick="nextBtn()">
+              < </button>
+                <button class="btn-two" onclick="prevBtn()">
+                  > </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+      <div class="center-big-text mar-top-15">Media Updates</div>
+
+      <div class="media-card-row">
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/one.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">
+            Noble Act of Collective Qurbani | Saylani's Two Decades of #Serving the #Underprivileged
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/two.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Saylani Asan Rozgar Scheme 2023 Empower #People Join Our #Mission
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/three.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Cyclone Biparjoy | Food Distribution | Saylani | 2023
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/four.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Collective Qurbani with Saylani | Join Us in Serving Humanity | Eid Ul Adha 2023
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="media-card-row mar-top-15">
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/five.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Janwar Liya or Dhokha Kaisy Hua ? | PSM | Eid ul Adha 2023
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/six.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">SMIT Summer Camp 2023 | Techno Kids | Saylani
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/seven.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Saylani Asan Rozgar Scheme Empower #People Towards Self #Sustainability
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+        <div class="media-card">
+          <div class="media-relative">
+            <img src="css/images/media/eight.png">
+            <div class="media-absolute">
+              <img src="css/images/play.png">
+            </div>
+          </div>
+          <div class="media-text">Is Saal Qurbani Kaisy Hogi ? | Eid ul Adha | Pakistan
+            <div class="media-subtext">
+              #Organisation #Charity
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="center-big-text mar-top-15">News</div>
+
+      <div class="media-card-row mar-top-15">
+        <div class="news-card">
+          <img src="css/images/news/one.jpg">
+          <div class="date-bnt">
+            Thu Jun o8 2023
+          </div>
+          <div class="media-text">Director of Huawei Visited Saylani Welfare Trust H...
+            <div class="small-right mar-top-15">
+              <img src="css/icons/arrow-right.png">
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="css/images/news/two.jpg">
+          <div class="date-bnt">
+            Thu Jun o8 2023
+          </div>
+          <div class="media-text">Saylani x ORS Distribution
+            <div class="small-right mar-top-15">
+              <img src="css/icons/arrow-right.png">
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="css/images/news/three.jpg">
+          <div class="date-bnt">
+            Thu Jun o8 2023
+          </div>
+          <div class="media-text">Faisal Edhi visit to Saylani Welfare Head Office.
+            <div class="small-right mar-top-15">
+              <img src="css/icons/arrow-right.png">
+            </div>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="css/images/news/four.jpg">
+          <div class="date-bnt">
+            Thu Jun o8 2023
+          </div>
+          <div class="media-text">Saylani Rozgar Expo
+            <div class="small-right mar-top-15">
+              <img src="css/icons/arrow-right.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="saylani-guide mar-top-45">
+        <div class="center-coloum">
+          <div class="guide-text">
+            Saylani Guide
+          </div>
+          <div class="saylani-input">
+            <input type="text" placeholder="Enter-E-Mail-Address">
+          </div>
+          <div class="saylani-subscribe-btn">
+            Subscribe
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer mar-top-45">
+
+    <div class="footer-row">
+      <div class="footer-logo mar-top-45">
+        <img src="css/images/logo.png">
+        <div class="colors-icons">
+          <a href="https://www.facebook.com/SaylaniWelfareInternationalTrust" target="_blank"><img
+              src="css/images/facebook.png"></a>
+          <a href="https://twitter.com/OfficialSwit" target="_blank"><img src="css/images/twitter.png"></a>
+          <a href="https://www.youtube.com/c/SaylaniWelfareInternationalTrust" target="_blank"><img
+              src="css/images/youtube.png"></a>
+
+        </div>
+      </div>
+
+      <div class="footer-content mar-top-45">
+
+        <div class="one-coloumn">
+          <h2>About</h2>
+          <a href="https://www.saylaniwelfareusa.com/en/about/saylani-introduction" target="_blank">Introduction</a><br>
+          <a href="https://www.saylaniwelfareusa.com/en/about/chairman-message" target="_blank">Chairman Message</a>
+        </div>
+
+        <div class="one-coloumn">
+          <h2>Explore</h2>
+          <a href="https://www.saylaniwelfareusa.com/en/news" target="_blank">News</a><br>
+          <a href="https://www.saylaniwelfareusa.com/en/media" target="_blank">Media</a><br>
+          <a href="https://www.saylaniwelfareusa.com/en/contact-us" target="_blank">Contact</a><br>
+          <a href="https://www.saylaniwelfareusa.com/en/donate" target="_blank">Donation</a>
+        </div>
+        <div class="two-coloumn">
+          <h2>Contact</h2>
+          <a style="cursor: text">1 E Erie St STE 525-2783 Chicago,<br>IL 60611</a><br>
+          <a style="cursor: text">Email:info@SaylaniWelfareUSA.com</a><br>
+          <a href="https://www.saylaniwelfareusa.com/en/donate" target="_blank">Call: 833-786-0999</a><br>
+          <a style="cursor: text">Tax ID: 88-3709826</a><br>
+          <a href="https://github.com/M-Muiz" target="_blank">Muhammad Muiz</a><br>
+        </div>
+
+      </div>
+    </div>
+    <div class="year">Copyright @ <span id="year">2023</span> by Saylani Welfare Int Trust</div>
+
+
+  </div>
+
+  </div>
+
+  </div>
+
+
+
+
+
+  <script src="java/app.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+      strings: [
+        "clean water,",
+        "education",
+        "health care and lot more,",
+        "assistance to disaster affectees,",
+        "ashhad",
+      ],
+      typeSpeed: 150,
+      backSpeed: 100,
+      looped: true,
+    });
+  </script>
+</body>
+
+</html>

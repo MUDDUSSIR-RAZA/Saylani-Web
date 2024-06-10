@@ -1,0 +1,283 @@
+@media only screen and (max-width:1370px){
+      .small-nav{
+        width: 90%;
+        margin: 0 auto;
+      }
+    .navbar{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .nav-text{
+      margin-left: 6%;
+    }
+       .main-container{
+        width: 90%;
+        margin: 0 auto;
+       }
+       .media-relative {
+        position: relative;
+        width: 270px;
+        height: 250px;
+       }
+    .news-card img {
+      width: 270px;
+      height: 230px;
+    }
+ .small-right img{
+  height: 20px;
+  width: 20px;
+ }
+ .side-icons {
+  margin-top: 10px;
+}
+.card{
+  width: 300px;
+}
+p.services-txt {
+  font-weight: bolder;
+  padding: 6px 0;
+  text-align: center;
+}
+.project-img img {
+  width: 100%;
+  height: 450px;
+}
+.project-img p {
+  font-size: 18px;
+}
+.round-backgound {
+  height: 125px;
+  width: 125px;
+  padding: 6px;
+}
+.round-backgound img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+.media-card {
+  height: 375px;
+  width: 272px;
+}
+.news-card {
+  height: 400px;
+  width: 270px;
+  border-radius: 10px;
+}
+.container-two {
+  height: 170px;
+}
+.setall-btns {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  height: 120px;
+}
+}
+@media only screen and (max-width:1280px){
+  body{
+    overflow-x: hidden;
+  }
+  .ham-burger {
+    display: block;
+    color: aqua;
+   }
+   .navbar{
+    align-items: flex-start;
+    flex-direction: column;
+   }
+   .nav-text{
+    margin-left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+   }
+.nav-text li{
+  margin-top: 10px;
+}
+.nav-buttons{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.nav-btn{
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 8px;
+}
+}
+@media only screen and (max-width:1180px){
+  .project-img hr {
+    width: 470px;
+  }
+  .slider-container{
+    height: 520px;
+  }
+  .media-card{
+    width: 200px;
+  }
+  .media-relative{
+    width: 200px;
+  }
+  .media-absolute{
+    left: 70px;
+    top: 100px;
+  }
+  .news-card{
+    width: 200px;
+    height: 420px;
+  }
+  .news-card img{ 
+    width: 200px;
+  }
+  .small-right img{
+  width: 20px;
+  }
+  .footer-content {
+    margin: 0;
+    margin-left: 30px;
+}
+}
+
+@media only screen and (max-width:1000px){
+  .container-two{
+    height: 240px;
+  }
+  .setall-btns {
+    display: flex;
+    width: 90%;
+    gap: 6px;
+    flex-wrap: wrap;
+    height: 120px;
+}
+  .footer-content {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+  }
+  .footer-logo img {
+    width: 270px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+.colors-icons img {
+  width: 40px;
+  height: 40px;
+}
+}
+@media only screen and (max-width: 980px){
+  .navbar,.main-container{
+    width: 70%;
+    margin: 0 auto;
+  }
+.container-two {
+  display: block;
+}
+.setall {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: flex-start;
+}
+.input{
+  width: 100%;
+}
+input[type="number"] {
+  padding: 14px;
+  border: 1px solid gray;
+  outline: none;
+  width: 100%;
+}
+.setall-btns {
+  display: flex;
+  width: 100%;
+}
+.services{
+  display: flex;
+  flex-wrap:wrap;
+}
+.service-box{
+  margin-top: 20px;
+}
+.cards{
+  flex-wrap: wrap;
+}
+.card{
+  width: 90%;
+  margin: 10px auto;
+}
+.block{
+  display: block;
+}
+.project-box {
+  width: 90%;
+  margin: 10px 0px;
+}
+.count-row{
+  width: 90%;
+  flex-wrap: wrap;
+}
+.slider-container {
+  height: 665px;
+}
+.media-card-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.media-card{
+  width: 100%;
+}
+.media-relative{
+  width: 100%;
+}
+.media-absolute {
+  left: 200px;
+  top: 100px;
+}
+.news-card{
+  width: 100%;
+}
+.news-card img{
+  width: 100%;
+}
+.small-right img{
+  width: 20px;
+  height: 20px;
+}
+.center-coloum {
+  justify-content: flex-start;
+}
+.saylani-input input {
+  width: 90%;
+}
+.saylani-subscribe-btn {
+  width: 90%;
+}
+.footer{
+  height: 100%;
+  width: 100%;
+}
+.footer-row{
+  flex-direction: column;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+
+
+@media only screen and (max-width: 680px){
+  .count-box{
+
+  }
+}
